@@ -1,0 +1,29 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px
+  }
+  
+  .input-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .input-field {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  

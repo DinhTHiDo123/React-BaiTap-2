@@ -1,0 +1,31 @@
+.selectbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px
+  }
+  
+  .selectbox-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .selectbox {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .selectbox:hover {
+    border-color: #007bff;
+  }
+  

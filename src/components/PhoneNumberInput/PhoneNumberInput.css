@@ -1,0 +1,44 @@
+.phone-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px
+  }
+  
+  .phone-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .phone-wrapper {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .phone-code {
+    width: 50px;
+    padding: 8px;
+    border: none;
+    background: #f5f5f5;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .phone-number {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .phone-number:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  

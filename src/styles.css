@@ -1,0 +1,80 @@
+/* Định dạng chung cho input */
+.input-container {
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-container label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-container input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Switch Toggle */
+.switch {
+  width: 48px;
+  height: 24px;
+  background: #ccc;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.switch.active {
+  background: #007bff;
+}
+
+.switch .toggle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+.switch.active .toggle {
+  transform: translateX(24px);
+}
+
+/* Date Picker */
+.datepicker-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.datepicker-container input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Digit Input */
+.digit-input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  text-align: center;
+}

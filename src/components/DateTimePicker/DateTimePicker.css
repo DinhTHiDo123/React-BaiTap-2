@@ -1,0 +1,29 @@
+.datetime-picker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px
+  }
+  
+  .datetime-picker-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .datetime-picker-input {
+    width: 280px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .datetime-picker-input:focus {
+    border-color: #007bff;
+  }
+  

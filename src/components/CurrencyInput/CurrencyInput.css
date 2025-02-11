@@ -1,0 +1,30 @@
+.currency-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px
+  }
+  
+  .currency-input-label {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .currency-input {
+    width: 280px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: right;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .currency-input:focus {
+    border-color: #007bff;
+  }
+  
