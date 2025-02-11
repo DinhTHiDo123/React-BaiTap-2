@@ -9,9 +9,23 @@ import MultiSelect from "./components/MultiSelect/MultiSelect";
 import SelectboxSearch from "./components/SelectboxSearch/SelectboxSearch";
 import CurrencyInput from "./components/CurrencyInput/CurrencyInput";
 import DateTimePicker from "./components/DateTimePicker/DateTimePicker";
-// import DataTable from "./components/DataTable/DataTable";
+import DataTable from "./components/DataTable/DataTable";
 
 const App = () => {
+  const columns = [
+    { Header: "ID", accessor: "id" },
+    { Header: "Tên", accessor: "name" },
+    { Header: "Email", accessor: "email" },
+  ];
+  
+  const initialData = [
+    { id: 1, name: "Nguyễn Văn A", email: "a@gmail.com" },
+    { id: 2, name: "Trần Thị B", email: "b@gmail.com" },
+    { id: 3, name: "Lê Văn C", email: "c@gmail.com" },
+    { id: 4, name: "Phạm Thị D", email: "d@gmail.com" },
+    { id: 5, name: "Hoàng Văn E", email: "e@gmail.com" },
+    { id: 6, name: "Đặng Thị F", email: "f@gmail.com" },
+  ];
   const inputRef = useRef();
   const phoneInputRef = useRef();
   const radioRef = useRef();
@@ -71,18 +85,10 @@ const App = () => {
             { label: "Nhật Bản", value: "jp" },
           ]}
         />
-        <MultiSelect
-          ref={multiSelectRef}
-          label="Chọn sở thích"
-          options={[
-            { label: "Đọc sách", value: "option1" },
-            { label: "Du lịch", value: "option2" },
-            { label: "Nghe nhạc", value: "option3" },
-          ]}
-        />
           <SelectboxSearch ref={selectboxSearchRef} label="Tìm kiếm quốc gia" fetchOptions={fetchOptionsMock}/>
           <CurrencyInput ref={currencyRef} label="Nhập số tiền" currencySymbol="₫" />
           <DateTimePicker ref={datePickerRef} label="Chọn ngày" showTimeSelect={true} />
+          <DataTable ref={dataTableRef} columns={columns} data={initialData} pageSize={3} />
           </div>
     </div>
   );
