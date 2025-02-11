@@ -18,7 +18,6 @@ const Checkbox = forwardRef(({ label, options, value, onChange }, ref) => {
     if (onChange) onChange(newValues);
   };
 
-  // Expose methods cho parent component
   useImperativeHandle(ref, () => ({
     getValue: () => selectedValues,
     setValue: (newValues) => setSelectedValues(newValues),
@@ -45,7 +44,6 @@ const Checkbox = forwardRef(({ label, options, value, onChange }, ref) => {
   );
 });
 
-// Định nghĩa kiểu dữ liệu cho props
 Checkbox.propTypes = {
   label: PropTypes.string,
   options: PropTypes.arrayOf(

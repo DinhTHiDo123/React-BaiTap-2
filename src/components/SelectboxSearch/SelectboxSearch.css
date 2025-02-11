@@ -29,9 +29,10 @@
   
   .selectbox-search-dropdown {
     position: absolute;
-    top: 100%;
+    margin-left: 10px;
+    top: 40%;
     left: 0;
-    width: 100%;
+    width: 255px;
     background: white;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -49,6 +50,5 @@
   
   .selectbox-search-dropdown li:hover {
     background: #007bff;
-    color: white;
   }
   
